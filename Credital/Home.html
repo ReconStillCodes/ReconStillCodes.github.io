@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credital - Home</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+    <!-- Navigation Bar Top -->
+    <div class="navbar-top-container">
+        <button class="but-burger"></button>
+        <button class="navbar-account" onclick="openAccount()">
+            <div id="navbar-name">Account</div>
+            <img src="Assets/Account Profile.png" >   
+        </button>    
+    </div>
+
+    <div class="navbar-top-temp"></div>
+
+    <!-- Navigation Bar Left -->
+
+    <div class="navbar-left-container">
+        <img src="Assets/Logo Credital.png" class="navbar-logo">
+        
+        <a href="Home.html">
+        <button class="navbar-but-container">
+            <div class="navbar-img-container">
+                <img src="Assets/Home-1.png" class="navbar-icon">
+            </div>
+            Home
+        </button>   
+        </a>
+        
+        <a href="Financial Data.html">
+         <button class="navbar-but-container">
+            <div class="navbar-img-container">
+                <img src="Assets/Financial Data-1.png" class="navbar-icon">
+            </div>
+            Financial Data
+        </button>   
+        </a>
+
+        <a href="Balancing Plan.html">
+        <button class="navbar-but-container">
+            <div class="navbar-img-container">
+                <img src="Assets/Balancing-1.png" class="navbar-icon">
+            </div>
+            Balancing Plan
+        </button>
+        </a>
+        
+
+        <a href="Debt Manager.html">
+         <button class="navbar-but-container">
+            <div class="navbar-img-container">
+                <img src="Assets/Debt-1.png" class="navbar-icon">
+            </div>
+            Debt Manager
+        </button>   
+        </a>
+        
+        
+    </div>
+
+
+    <!-- Content -->
+
+    <div class="content-container">
+        <div class="navbar-left-temp">
+            
+        </div>
+
+        <!-- Main CODE -->
+        <div class="final-content-container">
+            
+            
+            <!-- Bar Graph -->
+            <div class="bar-container">
+                <div class="content-title">Income & Expense</div>
+
+                <div class="bar-graph">
+                    <canvas id="barGraph" class="bar"></canvas>  
+                </div>
+               
+            </div>
+
+
+            <!-- Bottom Part -->
+            <div class="extra1">
+
+
+                <!-- Left Wing / REPORT-->
+                <div class="left-wing">
+                    <div class="content-title bottom-title">Income & Expense</div>
+                    <!-- <div class="report-month">January</div> -->
+                    <!-- <input type="month" name="month" class="report-month" placeholder="Month"> -->
+                    
+                    
+                    <div class="report-info">
+                        <div class="report-info-container">
+                            <span class="report-info-title">Income</span>
+                            <div class="report-info-val" id="report-income">
+                                Rp. 0
+                            </div>
+                        </div>
+                        <div class="report-info-container">
+                            <span class="report-info-title">Expense</span>
+                            <div class="report-info-val" id="report-expense">
+                                Rp. 0
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Report Data -->
+                    <div class="report-data-container" id="report-data-container">
+
+                        <!-- First -->
+                        <!-- <div class="report-data-first">
+                            <div class="report-date">02</div>
+                            <div class="report-date-extra">
+                                <div class="report-day">Tuesday</div>
+                                <div class="report-year">December 2023</div>
+                            </div>
+                            <div class="report-net">Rp 5.000.000</div>
+    
+                            <button class="report-arrow">
+                                <img src="Assets/Arrow button 1.png" class="arrow">   
+                            </button>
+                            
+                        </div> -->
+
+                        
+
+                        <!-- Second -->
+                        <!-- <div class="report-data-second">
+                            <div class="report-category">
+                                <img src="Assets/Wallet Icon.png">
+                                <div class="category-title">
+                                    Food & Beverages
+                                </div>
+                                <div class="category-val">Rp. 500.000</div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    
+
+                    
+                    
+                
+                </div>
+
+
+                <!-- Right Wing -->
+                <div class="right-wing">
+
+                    <!-- Pie Chart -->
+                    <div class="pie-container">
+                        <div class="content-title bottom-title">Expense Report</div>
+                        <div class="pie-chart">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                    
+                    </div>
+
+                    <!-- Debt Information -->
+
+                    <div class="debt-container">
+                        <div class="content-title bottom-title">Debt Information</div>
+                        <div class="debt-info-container">
+                            <div class="debt-info">
+                                <span class="debt-title">Total Debt</span>
+                                <span class="debt-val" id="totalDebt-val">test</span>
+                            </div>
+
+                            <div class="debt-info">
+                                <span class="debt-title">Payment / Month</span>
+                                <span class="debt-val" id="totalMonthly-val">test</span>
+                            </div>
+
+                            <div class="debt-info">
+                                <span class="debt-title">Paid</span>
+                                <span class="debt-val" id="totalPaid-val">test</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="Home.js"></script>
+    <script src="Navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="Bar Chart.js"></script>
+    <script src="Pie Chart.js"></script>
+</body>
+</html>

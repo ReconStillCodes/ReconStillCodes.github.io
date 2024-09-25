@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Patua+One&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0%;
+    font-family: patua one;
+    background-color: #dfe9f5;
+}
+
+
+
+
+
+/* Navigation Bar Top ========================================== */
+
+.navbar-top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    background-color: #537FE7;
+    border-bottom: solid 3px black;
+    z-index: 1;
+}
+
+.navbar-top-temp{
+    height: 55px;
+    width: 100%;
+    /* background-color: red; */
+    /* border-bottom: solid 3px black; */
+}
+
+.but-burger{
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    background-image: url(Assets/Burger\ button.png);
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar-account{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap:10px;
+    height: 40px;
+    width: auto;
+    margin-right: 30px;
+
+    font-family: patua one;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+.navbar-account:hover{
+    color: #ADC6FF;
+    transition-duration: 300ms;
+}
+
+.navbar-account img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.navbar-account div{
+    /* color: white; */
+    font-size: 1.3em;
+    text-align: right;
+    /* margin-right: 10px; */
+}
+
+
+
+
+
+/* Navigation Bar Left ============================================== */
+
+.navbar-left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 57px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: #ADC6FF;
+}
+
+.navbar-logo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+.navbar-but-container{
+    display: flex;
+    margin-bottom: 13px;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1em;
+    text-align: left;
+
+    font-family: patua one;
+    background-color: #ADC6FF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-img-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+}
+
+.navbar-icon{
+    height: 30px;
+}
+
+.navbar-but-container:hover{
+    background-color: #a4baeb;
+    transition-duration: 300ms;
+}
+
+a{
+    width: 100%;
+    text-decoration: none;
+}
+
+
+/* Content ========================================= */
+
+.content-container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    /* margin-top: 57px; */
+    /* background-color: red; */
+}
+
+.navbar-left-temp{
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    /* border: 5px solid black; */
+}
+
+.final-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    
+    gap: 40px;
+    min-width: 768px;
+    /* border: 2px solid red; */
+    /* background-color: yellow; */
+
+}
+
+/* Account ======================================================== */
+
+.account-container{
+    display: flex;
+    gap: 20px;
+    height: 200px;
+    width: 50%;
+
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin: 20px;
+    margin-right: 0px;
+    width: 20%;
+}
+
+.profile-container img{
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+}
+
+.personal-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px;
+    margin-left: 10px;
+
+    height: auto;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+
+.personal-name{
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    font-size: 2em;
+    color: #537FE7;
+
+    /* border: 2px solid black; */
+}
+
+.personal-email{
+    height: auto;
+    width: 100%;
+    font-size: 1.1em;
+
+    /* border: 2px solid black; */
+}
+
+.but-container{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+    margin-top: 45px;
+
+    /* border: 2px solid black; */
+}
+
+.but-container button{
+    height: 100%;
+    width: 40%;
+
+    font-family: patua one;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+#but-signOut{
+    background-color: #537FE7;
+}
+
+#but-edit{
+    background-color: #FF1515;
+}
+
+#but-signOut:hover{
+    background-color: #a4baeb;
+    transition-duration: 300ms;
+}
+
+#but-edit:hover{
+    background-color: #FFADAD;
+    transition-duration: 300ms;
+}
+
+/* Wallet ===================================================== */
+
+.wallet-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 120px;
+    width: 50%;
+
+    color: white;
+    border-radius: 15px;
+    background-color: #537FE7;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+}
+
+.wallet-title{
+    height: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.wallet-val{
+    height: auto;
+    width: 90%;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+/* Overlay ========================================================= */
+
+.overlay-shadow-container{
+    display: none;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.overlay-top{
+    height: 55px;
+    width: 100%;
+    /* background-color: red; */
+    /* border-bottom: solid 3px black; */
+}
+
+.overlay-mid{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.overlay-left{
+    height: 100%;
+    width: 200px;
+    min-width: 200px;
+
+    /* background-color: green; */
+    opacity: 1;
+}
+
+.overlay-main{
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    /* border: 5px solid black; */
+    /* background-color: purple; */
+}
+
+.final-overlay-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 40px;
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    
+    gap: 40px;
+    min-width: 768px;
+    /* border: 2px solid red; */
+    /* background-color: yellow; */
+
+}
+
+.overlay-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    padding-bottom: 20px;
+
+    margin-top: 50px;
+
+    gap: 10px;
+
+    color: white;
+    border-radius: 15px;
+    background-color: #537FE7;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+}
+
+.overlay-title{
+    height: auto;
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+
+    /* border: 2px solid white; */
+    font-size: 1.5em;
+}
+
+.overlay-input-container{
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    width: 90%;
+    gap: 5px;
+
+    /* border: 2px solid white; */
+}
+
+.overlay-username{
+    height: auto;
+    width: 100%;
+    text-align: left;
+
+    font-size: 1em;
+}
+
+.overlay-input-container input{
+    height: 30px;
+    width: 93%;
+
+    font-family: patua one;
+    color: white;
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 7px;
+    outline: none;
+    border: 3px solid white;
+    background-color: #537FE7;
+}
+
+.overlay-input-container input:focus{
+    border-color: #a4baeb;
+    transition-duration: 300ms;
+}
+
+.overlay-button-container{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+
+    /* border: 2px solid white; */
+}
+
+.overlay-button-container button{
+    height: 100%;
+    width: 100px;
+    border-radius: 25px;
+
+    font-family: patua one;
+    font-size: 1em;
+    color: black;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#overlay-but-submit{
+    background-color: #B0FFC6;
+}
+
+#overlay-but-cancel{
+    background-color: #FFADAD;
+}

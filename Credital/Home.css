@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Patua+One&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0%;
+    font-family: patua one;
+    background-color: #dfe9f5;
+}
+
+
+
+
+
+/* Navigation Bar Top ========================================== */
+
+.navbar-top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    background-color: #537FE7;
+    border-bottom: solid 3px black;
+    z-index: 1;
+}
+
+.navbar-top-temp{
+    height: 55px;
+    width: 100%;
+    border-bottom: solid 3px black;
+}
+
+.but-burger{
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    background-image: url(Assets/Burger\ button.png);
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar-account{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap:10px;
+    height: 40px;
+    width: auto;
+    margin-right: 30px;
+
+    font-family: patua one;
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+.navbar-account:hover{
+    color: #ADC6FF;
+    transition-duration: 300ms;
+}
+
+.navbar-account img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.navbar-account div{
+    /* color: white; */
+    font-size: 1.3em;
+    text-align: right;
+    /* margin-right: 10px; */
+}
+
+
+
+
+
+/* Navigation Bar Left ============================================== */
+
+.navbar-left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 57px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    background-color: #ADC6FF;
+}
+
+.navbar-logo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 100px;
+}
+
+.navbar-but-container{
+    display: flex;
+    margin-bottom: 13px;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    font-size: 1.1em;
+    text-align: left;
+
+    font-family: patua one;
+    background-color: #ADC6FF;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-img-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+}
+
+.navbar-icon{
+    height: 30px;
+}
+
+.navbar-but-container:hover{
+    background-color: #a4baeb;
+    transition-duration: 300ms;
+}
+
+a{
+    width: 100%;
+    text-decoration: none;
+}
+
+
+
+
+/* Contnet ========================================= */
+
+.content-container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    /* margin-top: 57px; */
+    /* background-color: red; */
+}
+
+.navbar-left-temp{
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    /* border: 5px solid black; */
+}
+
+.final-content-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 12%;
+    margin-right: 12%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    
+    gap: 40px;
+    min-width: 768px;
+    /* border: 2px solid red   ; */
+    /* background-color: yellow; */
+
+}
+
+
+
+
+
+
+
+
+
+/* MAIN CODE ======================================================*/
+
+    /* Bar Graph ================================================= */
+    
+    .bar-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+
+        height: 250px;
+        width: 100%;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    .content-title{
+        font-size: 1.7em;
+        width: 90%;
+        height: auto; 
+        margin-top: 10px;
+        margin-left: 20px;
+        /* margin-right: 20px; */
+
+        /* border: 2px solid black; */
+    }
+
+    .bar-graph{
+        margin-left: 20px;
+        height: 190px;
+        width: 90%;
+    }
+
+
+
+
+
+
+    /* Bottom Part ============================================= */
+    .extra1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        height: auto;
+        width: 100%;
+        /* border: 2px solid black; */
+    }
+
+    .left-wing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 40%;
+
+        padding-bottom: 30px;
+
+        gap: 20px;
+
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+        background-color: white
+    }
+
+    .right-wing{
+        height: 100%;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 50px;
+
+        /* border-radius: 15px;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+        background-color: white; */
+    }
+
+
+
+    /* Left Wing / REPORT =========================================== */
+    
+    .bottom-title{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .report-month{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+
+        font-family: patua one;
+        font-size: 1.3em;
+        color: white;
+
+        outline: none;
+        border: none;
+
+        border-radius: 30px;
+        background-color: #537FE7;
+    }
+
+    ::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+
+    .report-info{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        width: 80%;
+        border-radius: 10px;
+        background-color: #537FE7;
+    }
+
+    .report-info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 70%;
+        width: 48%;
+        /* border: 2px solid white; */
+    }
+
+    .report-info-title{
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .report-info-val{
+        width: 100%;
+        text-align: center;
+    }
+
+    #report-income{
+        font-size: 1em;
+        color: #B0FFC6;
+    }
+
+    #report-expense{
+        font-size: 1em;
+        color: #FFADAD;
+    }
+
+        /* Report Data ========================================= */
+
+        /* First */
+
+        .report-data-container{
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            height: auto;
+        }
+        
+        .report-data-first{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            width: 80%;
+            border-radius: 10px;
+            color: white;
+            background-color: #537FE7;
+        }
+
+        .report-date{
+            display: flex;
+            justify-content: right;
+            height: 70%;
+            width: 12%;
+            margin-left: 10px;
+            font-size: 2em;
+            /* border: 2px solid white; */
+        }
+
+        .report-date-extra{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 70%;
+            min-width: 57px;
+            margin-left: 5px;
+            margin-right: 15px;
+            font-size: 2em;
+            /* border: 2px solid white; */
+        }
+
+        .report-day{
+            width: 100%;
+            font-size: 0.5em;
+        }
+
+        .report-year{
+            width: 100%;
+            font-size: 0.3em;
+        }
+
+        .report-net{
+            width: 150px;
+            height: auto;
+            text-align: right;
+            margin-right: 10px;
+            /* color: #B0FFC6; */
+            /* border: 2px solid white; */
+        }
+
+        .report-arrow{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        /* .report-arrow:active .arrow{
+            rotate: 90deg;
+        } */
+
+        .red{
+            color: #FFADAD;
+        }
+
+        .green{
+            color: #B0FFC6;
+        }
+
+
+
+        /* second */
+        .report-data-second{
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            gap: 10px;
+            width: 80%;
+            height: auto;
+            color: white;
+            padding-bottom: 15px;
+
+            border-radius: 10px;
+            background-color: #537FE7;
+        }
+
+        .report-category{
+            display: flex;
+            align-items: center;
+
+            margin-top: 15px;
+            height: 30px;
+            width: 90%;
+            /* border: 2px solid white; */
+        }
+
+        .report-category img{
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .category-title{
+            width: 100px;
+            text-align: left;
+            font-size: 0.9em;
+            margin-right: 4px;
+            /* border: 2px solid white; */
+        }
+
+        .category-val{
+            color: #B0FFC6;
+            width: 50%;
+            text-align: right;
+            /* border: 2px solid white; */
+        }
+
+    
+    /* Right Wing ==============================================*/
+
+    /* Pie Chart ============================================= */
+
+    .pie-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 450px;
+        width: 100%;
+
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+        background-color: white;
+    }
+
+    .pie-chart{
+        /* height: 400px; */
+        width: 70%;
+        margin-top: 30px;
+    }
+
+
+
+    /* Debt Information  */
+
+    .debt-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: 150px;
+        width: 100%;
+
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.25);
+        background-color: white;
+    }
+
+    .debt-info-container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 70px;
+        width: 90%;
+        margin-top: 20px;
+        /* border: 2px solid black; */
+    }
+
+    .debt-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 27%;
+        color: white;
+        background-color: #537FE7;
+        border-radius: 8px;
+
+    }
+
+    .debt-title{
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .debt-val{
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em;
+    }

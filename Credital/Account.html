@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credital - Account</title>
+    <link rel="stylesheet" href="Account.css">
+</head>
+<body>
+
+    <!-- Navigation Bar Top -->
+    <div class="navbar-top-container">
+        <button class="but-burger"></button>
+        <button class="navbar-account" onclick="openAccount()">
+            <div id="navbar-name">Anton Budianto</div>
+            <img src="Assets/Account Profile.png" >   
+        </button>    
+    </div>
+
+    <div class="navbar-top-temp"></div>
+
+    <!-- Navigation Bar Left -->
+
+    <div class="navbar-left-container">
+        <img src="Assets/Logo Credital.png" class="navbar-logo">
+        
+        <a href="Home.html">
+        <button class="navbar-but-container">
+            <div class="navbar-img-container">
+                <img src="Assets/Home-1.png" class="navbar-icon">
+            </div>
+            Home
+        </button>   
+        </a>
+        
+        <a href="Financial Data.html">
+         <button class="navbar-but-container">
+            <div class="navbar-img-container">
+                <img src="Assets/Financial Data-1.png" class="navbar-icon">
+            </div>
+            Financial Data
+        </button>   
+        </a>
+        
+
+        <a href="Balancing Plan.html">
+            <button class="navbar-but-container">
+                <div class="navbar-img-container">
+                    <img src="Assets/Balancing-1.png" class="navbar-icon">
+                </div>
+                Balancing Plan
+            </button>
+        </a>
+
+        <a href="Debt Manager.html">
+         <button class="navbar-but-container">
+            <div class="navbar-img-container">
+                <img src="Assets/Debt-1.png" class="navbar-icon">
+            </div>
+            Debt Manager
+        </button>   
+        </a>
+        
+    </div>
+
+
+    <!-- Content -->
+
+    <div class="content-container">
+        <div class="navbar-left-temp"></div>
+
+        <!-- Main CODE -->
+        <div class="final-content-container">
+        
+            <!-- Account -->
+            <div class="account-container">
+                <div class="profile-container">
+                    <img src="Assets/Account Profile.png">
+                </div>
+                
+                <div class="personal-container">
+                    <div class="personal-name" id="personal-name">Anton Budianto</div>
+                    <div class="personal-email" id="personal-email">anton@gmail.com</div>
+                    <div class="but-container">
+                        <button id="but-signOut" onclick="openLogin()">Sign Out</button>
+                        <button id="but-edit" onclick="openOverlay()">Edit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wallet -->
+            <div class="wallet-container">
+                <div class="wallet-title">My Wallet</div>
+                <div class="wallet-val" id="wallet-val">My Wallet</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay-shadow-container" id="overlay-shadow">
+       <div class="overlay-top"></div>
+
+       <div class="overlay-mid">
+            <div class="overlay-left"></div>
+            
+            <!-- Overlay Main -->
+            <div class="overlay-main">
+                <div class="final-overlay-container">
+                    
+                    <!-- Main Content Overlay -->
+                    <div class="overlay-container">
+                        <span class="overlay-title">Edit Personal Detail</span>
+                        <div class="overlay-input-container">
+                            <span class="overlay-username">Username</span>
+                            <input type="text" id="change-username">
+                        </div>
+
+                        <div class="overlay-input-container">
+                            <span class="overlay-username">Email</span>
+                            <input type="email" id="change-email">
+                        </div>
+
+                        <div class="overlay-button-container">
+                            <button id="overlay-but-submit" onclick="changeSubmit()">Submit</button>
+                            <button id="overlay-but-cancel" onclick="closeOverlay()">Cancel</button>
+                        </div>
+                    </div>
+
+
+
+                    
+                </div>  
+            </div>
+       </div>
+    </div>
+
+    
+    <script src="Navbar.js"></script>
+    <script src="Account.js"></script>
+</body>
+</html>
